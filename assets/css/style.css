@@ -1,0 +1,502 @@
+:root {
+    --primary-color: #1E3F7B;
+    --secondary-color: #A7D8E8;
+    --light-color: #ecf0f1;
+    --dark-color: #34495e;
+    --accent-color: #e74c3c;
+    --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: #fafafa;
+    font-size: 18px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1b3c78;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+}
+
+.navbar.navbar-scrolled {
+    background-color: rgba(67, 97, 238, 0.9) !important;
+}
+
+.navbar.navbar-scrolled .nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white !important;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 85vh;
+    min-height: 550px;
+    background: url('https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 30, 30, 0.6);
+    z-index: 1;
+}
+
+.hero-section .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px; /* Base padding [cite: 53] */
+    box-sizing: border-box; /* Added for better responsiveness */
+}
+
+.hero-section h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section p.lead {
+    font-size: 1.35rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 50px;
+    margin: 0 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #172f5a;
+    border-color: #172f5a;
+    transform: translateY(-2px);
+}
+
+.hero-section .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Section Title */
+.section-title {
+    position: relative;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--secondary-color);
+}
+
+/* Services */
+.card-service {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.card-service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.card-service .icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient);
+    color: white;
+    border-radius: 50%;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.card-service:hover .icon {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.card-service h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.3;
+}
+
+.card-service p {
+    font-size: 0.95rem;
+    flex: 1 1 auto;
+}
+
+/* Específico para francés [cite: 68] */
+html[lang="fr"] .card-service h4 {
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+
+html[lang="fr"] .card-service p {
+    font-size: 0.85rem;
+}
+
+/* Portfolio Grid [cite: 70] */
+#portfolio-items-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr)); /* Adjusted for 2 columns */
+    gap: 30px;
+    padding: 0 15px;
+}
+
+/* Media query for portfolio on smaller screens to maintain responsiveness */
+@media (max-width: 992px) {
+    #portfolio-items-container {
+        grid-template-columns: repeat(auto-fill, minmax(45%, 1fr)); /* Stays 2 columns */
+    }
+}
+
+@media (max-width: 768px) {
+    #portfolio-items-container {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+        gap: 25px;
+    }
+    .portfolio-img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    #portfolio-items-container {
+        gap: 20px;
+    }
+    .portfolio-img {
+        height: 180px;
+    }
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Corrected from #A7D8E8 */
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-img {
+    transform: scale(1.05);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 62, 80, 0.9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-overlay h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.portfolio-overlay p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-overlay .btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 1.2rem;
+}
+
+/* Contact Info [cite: 79] */
+.contact-info {
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-right: 10px;
+}
+
+/* Footer [cite: 80] */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 30px 0;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--secondary-color);
+}
+
+/* WhatsApp Float [cite: 83] */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    background-color: #25d366;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #1ebe5d;
+}
+
+.whatsapp-float i {
+    margin: 0;
+}
+
+/* Modal [cite: 87] */
+#portfolioModal .modal-content {
+    border-radius: 10px;
+    border: none;
+    background-color: #EDEDED; /* Changed to a lighter color for better contrast with dark text */
+    color: #1E3F7B; /* Changed for better contrast */
+}
+
+#portfolioModal .modal-header {
+    border-bottom: 1px solid rgba(30, 63, 123, 0.1); /* Adjusted border color for contrast */
+}
+
+#portfolioModal .modal-title {
+    color: #1E3F7B; /* Changed for better contrast */
+    font-weight: 600;
+}
+
+#portfolioModal .modal-body {
+    padding: 1.5rem;
+}
+
+#portfolioModal .modal-footer {
+    border-top: 1px solid rgba(30, 63, 123, 0.1); /* Adjusted border color for contrast */
+}
+
+#modalHighlights li {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(30, 63, 123, 0.1); /* Adjusted border color for contrast */
+    font-size: 0.95rem;
+}
+
+#modalHighlights li:last-child {
+    border-bottom: none;
+}
+
+/* Centering Modal Information */
+#portfolioModal .modal-body ul {
+    text-align: center; /* Center the text within the unordered list */
+    padding-left: 0; /* Remove default padding for ul */
+}
+
+#portfolioModal .modal-body li {
+    list-style-position: inside; /* Keeps bullet points inside if you re-add them */
+    text-align: center; /* Ensures each list item's text is centered */
+    display: block; /* Make list items block-level to apply text-align */
+}
+
+/* Custom size for the modal [cite: 92] */
+#portfolioModal .modal-dialog {
+    max-width: 500px; /* Adjust this value to your desired smaller size */
+    margin: 1.75rem auto; /* Centers the modal and adds default vertical margin */
+}
+
+/* Optional: Adjust for smaller screens if needed */
+@media (max-width: 768px) {
+    #portfolioModal .modal-dialog {
+        max-width: 90%; /* Make it responsive on smaller screens */
+    }
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .hero-section {
+        height: 75vh;
+        min-height: 550px;
+    }
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-section {
+        height: 70vh;
+        min-height: 500px;
+    }
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+    .hero-section p.lead {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        min-height: 450px;
+        padding: 80px 20px 60px;
+    }
+    .hero-section .hero-content {
+        padding: 30px 15px; /* Adjusted horizontal padding */
+    }
+    .hero-section h1 {
+        font-size: 1.9rem; /* Adjusted font size for smaller screens */
+        margin-bottom: 1rem;
+    }
+    .hero-section p.lead {
+        font-size: 1rem; /* Adjusted font size for smaller screens */
+        margin-bottom: 1rem;
+    }
+    .hero-section .btn {
+        display: block;
+        width: 80%;
+        margin: 0 auto 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        min-height: 400px;
+        padding: 60px 10px 40px; /* Further refined padding for very small screens */
+    }
+    .hero-section .hero-content {
+        padding: 20px 10px; /* Further reduced horizontal padding */
+    }
+    .hero-section h1 {
+        font-size: 1.5rem; /* Further reduced font size for phones */
+        line-height: 1.2;
+    }
+    .hero-section p.lead {
+        font-size: 0.9rem; /* Further reduced font size for phones */
+        line-height: 1.4;
+    }
+    .hero-section .btn {
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .card-service {
+        padding: 20px;
+    }
+    .card-service h4 {
+        font-size: 1.1rem;
+    }
+    .card-service p {
+        font-size: 0.9rem;
+    }
+    html[lang="fr"] .card-service h4 {
+        font-size: 1rem;
+    }
+    html[lang="fr"] .card-service p {
+        font-size: 0.8rem;
+    }
+}

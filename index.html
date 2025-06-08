@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="pageTitle"></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#" data-i18n="yourNameNav"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-i18n="aboutMeNav"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" data-i18n="servicesNav"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio" data-i18n="portfolioNav"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-i18n="contactNav"></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" data-i18n="language">
+                            Idioma
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" data-lang="es">Español</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="fr">Français</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section text-white d-flex align-items-center">
+        <div class="overlay"></div>
+        <div class="container hero-content text-center">
+            <h1 class="display-12 fw-bold mb-16" data-i18n="heroTitle"></h1>
+            <p class="lead mb-2" data-i18n="heroSubtitle"></p>
+            <a href="#contact" class="btn btn-primary btn-lg px-4" data-i18n="contactMeBtn"></a>
+            <a href="#services" class="btn btn-outline-light btn-lg px-4" data-i18n="myServicesBtn"></a>
+        </div>
+    </section>
+
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title" data-i18n="aboutMeTitle"></h2>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-1">
+                    <img src="/assets/img/works/lina_amaris.jpg" alt="[Tu Nombre]" class="img-fluid">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-3" data-i18n="helloName"></h3>
+                    <p class="mb-4" data-i18n="aboutMeP1"></p>
+                    <p data-i18n="aboutMeP2"></p>
+                    <p data-i18n="servicesListTitle"></p>
+                    <div class="row mt-4" id="about-services-list">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title" data-i18n="myServicesTitle"></h2>
+            <p class="text-center mb-5" data-i18n="myServicesSubtitle"></p>
+
+            <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="services-carousel-inner">
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title" data-i18n="portfolioTitle"></h2>
+            <p class="text-center mb-5" data-i18n="portfolioSubtitle"></p>
+
+            <div class="row" id="portfolio-items-container">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-soft-dark text-dark">
+        <div class="container">
+            <h2 class="text-center section-title" data-i18n="contactMeTitle"></h2>
+            <p class="text-center mb-5" data-i18n="contactMeSubtitle"></p>
+
+            <div class="row">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="contact-info">
+                        <h4 class="mb-4" data-i18n="contactInfoTitle"></h4>
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="fas fa-map-marker-alt contact-icon mt-1"></i>
+                            <div>
+                                <h5 data-i18n="locationTitle"></h5>
+                                <p class="mb-0" data-i18n="yourCityCountry"></p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="fas fa-envelope contact-icon mt-1"></i>
+                            <div>
+                                <h5 data-i18n="emailTitle"></h5>
+                                <p class="mb-0" data-i18n="yourEmail"></p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="fas fa-phone contact-icon mt-1"></i>
+                            <div>
+                                <h5 data-i18n="phoneTitle"></h5>
+                                <p class="mb-0" data-i18n="yourPhone"></p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <i class="fas fa-clock contact-icon mt-1"></i>
+                            <div>
+                                <h5 data-i18n="scheduleTitle"></h5>
+                                <p class="mb-0" data-i18n="scheduleHours"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label" data-i18n="nameLabel"></label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label" data-i18n="emailLabel"></label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label" data-i18n="subjectLabel"></label>
+                            <select class="form-select" id="subject" required>
+                                <option value="" selected disabled data-i18n="selectServiceOption"></option>
+                                <option value="gestion" data-i18n="serviceOption1"></option>
+                                <option value="desarrollo" data-i18n="serviceOption2"></option>
+                                <option value="analisis" data-i18n="serviceOption3"></option>
+                                <option value="consultoria" data-i18n="serviceOption4"></option>
+                                <option value="capacitacion" data-i18n="serviceOption5"></option>
+                                <option value="contenido" data-i18n="serviceOption6"></option>
+                                <option value="otro" data-i18n="serviceOptionOther"></option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label" data-i18n="messageLabel"></label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="sendMessageBtn"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal para ver detalles -->
+        <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitle">Título del Proyecto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul id="modalHighlights" class="list-group list-group-flush"></ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0" data-i18n="copyright"></p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://www.linkedin.com/in/lina-mercedes-amaris-fonseca-18651b69/" class="social-icon"><i
+                            class="fab fa-linkedin-in"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <a href="https://wa.me/573144473383" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+
+</html>

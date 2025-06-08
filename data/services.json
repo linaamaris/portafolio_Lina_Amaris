@@ -1,0 +1,107 @@
+{
+   "services": [
+      {
+         "icon": "fas fa-lightbulb",
+         "translations": {
+            "es": {
+               "title": "Gestion Humana & Bienestar",
+               "description": "Programas de bienestar, cultura organizacional, comités de convivencia."
+            },
+            "en": {
+               "title": "Human Management & Well-being",
+               "description": "Well-being programs, organizational culture, coexistence committees."
+            },
+            "fr": {
+               "title": "Gestion humaine & bien-être",
+               "description": "Programmes de bien-être, culture organisationnelle, comités de coexistence."
+            }
+         }
+      },
+      {
+         "icon": "fas fa-chart-line",
+         "translations": {
+            "es": {
+               "title": "Desarrollo Web",
+               "description": "Sitios web, portales de bienestar, intranets, automatización de procesos"
+            },
+            "en": {
+               "title": "Web Development",
+               "description": "Websites, well-being portals, intranets, process automation"
+            },
+            "fr": {
+               "title": "Développement Web",
+               "description": "Sites web, portails de bien-être, intranets, automatisation des processus"
+            }
+         }
+      },
+      {
+         "icon": "fas fa-calculator",
+         "translations": {
+            "es": {
+               "title": "Análisis de Datos",
+               "description": "Dashboards, análisis de clima laboral, predictibilidad y tendencias."
+            },
+            "en": {
+               "title": "Data Analysis",
+               "description": "Dashboards, work environment analysis, predictability and trends."
+            },
+            "fr": {
+               "title": "Analyse de Données",
+               "description": "Tableaux de bord, analyse du climat de travail, prévisibilité et tendances."
+            }
+         }
+      },
+      {
+         "icon": "fas fa-users",
+         "translations": {
+            "es": {
+               "title": "Consultoria & Asesorìa",
+               "description": "ESG, transformación digital, auditorías de bienestar."
+            },
+            "en": {
+               "title": "Consulting & Advisory",
+               "description": "ESG, digital transformation, well-being audits."
+            },
+            "fr": {
+               "title": "Consultation & Conseil",
+               "description": "ESG, transformation numérique, audits de bien-être."
+            }
+         }
+      },
+      {
+         "icon": "fas fa-balance-scale",
+         "translations": {
+            "es": {
+               "title": "Capacitación y Talleres",
+               "description": "Talleres de bienestar, capacitación en herramientas tecnológicas, innovación."
+            },
+            "en": {
+               "title": "Training & Workshops",
+               "description": "Well-being workshops, training in technological tools, innovation."
+            },
+            "fr": {
+               "title": "Formation & Ateliers",
+               "description": "Ateliers de bien-être, formation aux outils technologiques, innovation."
+            }
+         }
+      },
+      {
+         "icon": "fas fa-cogs",
+         "translations": {
+            "es": {
+               "title": "Desarrollo de Contenido",
+               "description": "Creación de contenido, materiales de capacitación."
+            },
+            "en": {
+               "title": "Content Development",
+               "description": "Content creation, training materials."
+            },
+            "fr": {
+               "title": "Développement de Contenu",
+               "description": "Création de contenu, supports de formation."
+            }
+         }
+      }
+     
+   ]
+}

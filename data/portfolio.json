@@ -1,0 +1,148 @@
+[
+  {
+    "image": "Amaris_postre.jpg",
+    "link": "#",
+    "category": "Proyecto",
+    "translations": {
+      "es": {
+        "title": "Sitio WEB - Antojos & Desayunos",
+        "description": "E-coomerce para la venta de desayunos & postres.",
+        "highlights": [
+          "Diseño responsive adaptable a móviles, tabletas y computadoras.",
+          "E-commerce completo con pasarela de pago integrada.",
+          "Sección de blog para contenido relacionado con gastronomía.",
+          "Gestión de productos, pedidos y clientes desde el panel de administración."
+        ]
+      },
+      "en": {
+        "title": "Website - Antojos & Desayunos",
+        "description": "E-commerce site for selling breakfasts and desserts.",
+        "highlights": [
+          "Responsive design adaptable to mobile, tablet, and desktop devices.",
+          "Full e-commerce functionality with integrated payment gateway.",
+          "Blog section for food-related content and tips.",
+          "Product, order, and customer management via admin panel."
+        ]
+      },
+      "fr": {
+        "title": "Site Web - Antojos & Desayunos",
+        "description": "Site e-commerce pour la vente de petits-déjeuners et desserts.",
+        "highlights": [
+          "Design responsive adapté aux mobiles, tablettes et ordinateurs.",
+          "Fonctionnalité e-commerce complète avec passerelle de paiement intégrée.",
+          "Section blog pour des contenus et conseils gastronomiques.",
+          "Gestion des produits, commandes et clients via le panneau d'administration."
+        ]
+      }
+    }
+  },
+  {
+    "image": "Alpha School.jpg",
+    "link": "#",
+    "category": "Proyecto",
+    "translations": {
+      "es": {
+        "title": "Sitio Web _ Alpha School",
+        "description": "Sitio Web para instituto tecnológico.",
+        "highlights": [
+          "Sección detallada de programas y cursos ofrecidos.",
+          "Formulario de inscripción en línea.",
+          "Diseño responsive compatible con todos los dispositivos.",
+          "Página de contacto con mapa, formulario y enlaces directos."
+        ]
+      },
+      "en": {
+        "title": "Website – Alpha School",
+        "description": "Website for a technology institute.",
+        "highlights": [
+          "Detailed section for programs and courses offered.",
+          "Online registration form.",
+          "Responsive design compatible with all devices.",
+          "Contact page with map, form, and direct links."
+        ]
+      },
+      "fr": {
+        "title": "Site Web – Alpha School",
+        "description": "Site Web pour un institut technologique.",
+        "highlights": [
+          "Section détaillée des programmes et cours proposés.",
+          "Formulaire d'inscription en ligne.",
+          "Design responsive compatible avec tous les appareils.",
+          "Page de contact avec carte, formulaire et liens directs."
+        ]
+      }
+    }
+  },
+  {
+    "image": "Bienestar_amaris.jpg",
+    "link": "#",
+    "category": "experiencia",
+    "translations": {
+      "es": {
+        "description": "Plataforma para la gestión de información de los colaboradores y actividades de la compañía.",
+        "highlights": [
+          "Página de inicio con actividades destacadas, testimonios y noticias internas.",
+          "Acceso personalizado para empleados y área de Recursos Humanos.",
+          "Diseño responsive para una experiencia fluida en todos los dispositivos.",
+          "Módulo de control y seguimiento de la participación de los colaboradores."
+        ]
+      },
+      "en": {
+        "title": "Website – Bienestar360",
+        "description": "Platform for managing employee information and company activities.",
+        "highlights": [
+          "Homepage featuring key activities, testimonials, and internal news.",
+          "Personalized access for employees and the HR department.",
+          "Responsive design for a seamless experience across all devices.",
+          "Module for tracking and monitoring employee participation."
+        ]
+      },
+      "fr": {
+        "description": "Plateforme de gestion des informations des employés et des activités de l'entreprise.",
+        "highlights": [
+          "Page d'accueil avec activités principales, témoignages et actualités internes.",
+          "Accès personnalisé pour les employés et le service RH.",
+          "Design responsive pour une expérience fluide sur tous les appareils.",
+          "Module de suivi et de contrôle de la participation des employés."
+        ]
+      }
+    }
+  },
+  {
+    "image": "Dashboard_Inventario.jpg",
+    "link": "#",
+    "category": "experiencia",
+    "translations": {
+      "es": {
+        "title": "Sitio Web – Cafetería Alianza",
+        "description": "Sistema web para la gestión de inventario, ventas y usuarios en la cafetería Alianza.",
+        "highlights": [
+          "Diseño responsive para acceso desde cualquier dispositivo.",
+          "Dashboard interactivo con indicadores clave del negocio.",
+          "Gestión integral de usuarios, ventas y productos.",
+          "Accesos diferenciados para administradores y vendedores."
+        ]
+      },
+      "en": {
+        "title": "Website – Cafetería Alianza",
+        "description": "Web system for managing inventory, sales, and users at Cafetería Alianza.",
+        "highlights": [
+          "Responsive design for access from any device.",
+          "Interactive dashboard with key business metrics.",
+          "Comprehensive management of users, sales, and products.",
+          "Role-based access for administrators and sales staff."
+        ]
+      },
+      "fr": {
+        "title": "Site Web – Cafétéria Alianza",
+        "description": "Système web pour la gestion de l’inventaire, des ventes et des utilisateurs de la cafétéria Alianza.",
+        "highlights": [
+          "Design responsive accessible depuis tout appareil.",
+          "Tableau de bord interactif avec indicateurs clés.",
+          "Gestion complète des utilisateurs, des ventes et des produits.",
+          "Accès différencié pour les administrateurs et les vendeurs."
+        ]
+      }
+    }
+  }
+]
